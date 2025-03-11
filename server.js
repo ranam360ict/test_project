@@ -1,7 +1,7 @@
 import express from 'express';
 import apiRoutes from './routes/api.js'; // Ensure the correct path and extension
-
 const app = express();
+app.use(express.json())
 
 app.use('/api', apiRoutes);
 
